@@ -1,1 +1,1 @@
-web: gunicorn meatball_factory.wsgi --log-file -
+web: gunicorn meatballfactory.wsgi --log-file -
