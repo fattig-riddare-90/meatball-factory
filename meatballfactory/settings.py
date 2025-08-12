@@ -39,6 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+#   My apps
+
+    'users',
+    'store',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +82,7 @@ WSGI_APPLICATION = 'meatballfactory.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL'),
-        conn_max_age=600
+        default=f"sqlite:///{os.path.join(BASE_DIR, 'db.sqlite3')}"
     )
 }
 
