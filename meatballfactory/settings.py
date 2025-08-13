@@ -49,7 +49,6 @@ INSTALLED_APPS = [
 
 #   My apps
 
-    'users',
     'store',
     'orders',
 ]
