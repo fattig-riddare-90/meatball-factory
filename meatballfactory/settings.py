@@ -44,7 +44,7 @@ if host:
 # Application definition
 
 INSTALLED_APPS = [
-    'cloudiary',
+    'cloudinary',
     'cloudinary_storage',
     'django.contrib.admin',
     'django.contrib.auth',
